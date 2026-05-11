@@ -1,0 +1,14 @@
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/SimpleNotificationSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/SimpleNotificationSystem.AssemblyInfoInputs.cache
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/SimpleNotificationSystem.AssemblyInfo.cs
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/SimpleNotificationSystem.csproj.CoreCompileInputs.cache
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/bin/Debug/net10.0/SimpleNotificationSystem
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/bin/Debug/net10.0/SimpleNotificationSystem.deps.json
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/bin/Debug/net10.0/SimpleNotificationSystem.runtimeconfig.json
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/bin/Debug/net10.0/SimpleNotificationSystem.dll
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/bin/Debug/net10.0/SimpleNotificationSystem.pdb
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/SimpleNotificationSystem.dll
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/refint/SimpleNotificationSystem.dll
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/SimpleNotificationSystem.pdb
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/SimpleNotificationSystem.genruntimeconfig.cache
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/ref/SimpleNotificationSystem.dll
