@@ -33,12 +33,6 @@ namespace SimpleNotificationSystem.Presentation
                     switch (choice)
                     {
                         case 1:
-                            Console.Write("Enter User Id : ");
-                            int userId;
-                            while(!int.TryParse(Console.ReadLine(), out userId))
-                            {
-                                Console.Write("Invalid input. Please enter a number : ");
-                            }
                             Console.Write("Enter User Name : ");
                             string name = Console.ReadLine() ?? string.Empty;
                             Console.Write("Enter Email : ");
@@ -47,7 +41,6 @@ namespace SimpleNotificationSystem.Presentation
                             string phoneNumber = Console.ReadLine() ?? string.Empty;
                             User user = new User
                             {
-                                Id = userId,
                                 Name = name,
                                 Email = email,
                                 PhoneNumber = phoneNumber

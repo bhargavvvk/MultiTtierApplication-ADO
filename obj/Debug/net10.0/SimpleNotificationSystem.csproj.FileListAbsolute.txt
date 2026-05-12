@@ -12,3 +12,8 @@
 /Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/SimpleNotificationSystem.pdb
 /Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/SimpleNotificationSystem.genruntimeconfig.cache
 /Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/ref/SimpleNotificationSystem.dll
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/bin/Debug/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/bin/Debug/net10.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/bin/Debug/net10.0/Npgsql.dll
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/SimpleNotificationSystem.csproj.AssemblyReference.cache
+/Users/bhargavkokkula/Documents/SimpleNotificationSystem/obj/Debug/net10.0/SimpleNo.D44A4A71.Up2Date

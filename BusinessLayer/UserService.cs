@@ -1,13 +1,16 @@
 using SimpleNotificationSystem.Models;
+using SimpleNotificationSystem.Interfaces;
+using SimpleNotificationSystem.DataAccessLayer;
+using System.Dynamic;
 namespace SimpleNotificationSystem.BusinessLayer
+
 {
     public class UserService
     {
-        List<User> users;
-
+        UserRepository userRepository;
         public UserService()
         {
-            users = new List<User>();
+            userRepository= new UserRepository();
         }
 
         // Add User
@@ -32,29 +35,13 @@ namespace SimpleNotificationSystem.BusinessLayer
                 throw new Exception(
                     "Phone number must contain exactly 10 digits.");
             }
-
-            bool userExists = users.Any(u => u.Id == user.Id);
-
-            if (userExists)
-            {
-                throw new Exception("User Id already exists.");
-            }
-
-            users.Add(user);
-
-            return user;
+            return userRepository.Create(user);
         }
 
         // Get User By Id
         public User? GetUserById(int id)
         {
-            return users.FirstOrDefault(u => u.Id == id);
-        }
-
-        // Get All Users
-        public List<User> GetAllUsers()
-        {
-            return users;
+            return userRepository.Get(id);
         }
     }
 }

@@ -7,7 +7,7 @@ namespace SimpleNotificationSystem.BusinessLayer
 {
     public class NotificationService
     {
-        IRepository<int, Notification> notificationRepository;
+        NotificationRepository notificationRepository;
         public NotificationService()
         {
             notificationRepository = new NotificationRepository();
@@ -57,42 +57,13 @@ namespace SimpleNotificationSystem.BusinessLayer
                 SentDate=DateTime.Now,
                 UserId=user.Id
             };
-            sender.Send(user, notification);
-            return notificationRepository.Create(notification);
+            Notification createdNotification = notificationRepository.Create(notification);
+            sender.Send(user, createdNotification);
+            return createdNotification;
         }
         public List<Notification>? GetAllNotifications()
         {
             return notificationRepository.GetAll();
-        }
-        public Notification? DeleteNotification(int id)
-        {
-            return notificationRepository.Delete(id);
-        }
-        public Notification? UpdateNotificationMessage(int id, string updatedMessage)
-        {
-             if (string.IsNullOrWhiteSpace(updatedMessage))
-            {
-                 throw new Exception("Message cannot be empty.");
-            }
-            if (updatedMessage.Length < 5)
-            {
-                throw new Exception("Message should contain at least 5 characters.");
-            }
-            Notification? existingNotification = notificationRepository.Get(id);
-            if (existingNotification == null)
-            {
-                throw new Exception("Notification not found.");
-            }
-            if (existingNotification.Type == NotificationType.SMS && updatedMessage.Length > 160)
-            {
-                throw new Exception("SMS message should not exceed 160 characters.");
-            }
-            existingNotification.Message = updatedMessage;
-            return notificationRepository.Update(id, existingNotification);
-        }
-        public Notification? GetNotificationById(int id)
-        {
-            return notificationRepository.Get(id);
         }
     }
 }
